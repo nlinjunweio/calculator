@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>计算器</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .BOX {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      background-color: rgb(47, 230, 199);
+      border-radius: 5px;
+      margin: 100px auto;
+      overflow: hidden;
+    }
+
+    .Function {
+      margin-top: 10px;
+      padding-left: 15px;
+    }
+
+    #display {
+      margin-top: 20px;
+      margin-left: 10px;
+      background-color: #fff;
+    }
+
+    button {
+      width: 35px;
+      height: 25px;
+      background-color: rgb(101, 166, 250);
+      text-align: center;
+    }
+  </style>
+  <script src="Function.js"></script>
+</head>
+
+<body>
+  <div class="BOX">
+    <input type="text" id="display"><br>
+    <div class="Function">
+      <button onclick="ClearALL()">C</button>
+      <button onclick="OFF()">OFF</button>
+      <button onclick="BackSpace()">←</button>
+      <button onclick="Remainder()">%</button><br>
+      <button onclick="AddNumber('7')">7</button>
+      <button onclick="AddNumber('8')">8</button>
+      <button onclick="AddNumber('9')">9</button>
+      <button onclick="times()">*</button><br>
+      <button onclick="AddNumber('4')">4</button>
+      <button onclick="AddNumber('5')">5</button>
+      <button onclick="AddNumber('6')">6</button>
+      <button onclick="Divide()">/</button><br>
+      <button onclick="AddNumber('1')">1</button>
+      <button onclick="AddNumber('2')">2</button>
+      <button onclick="AddNumber('3')">3</button>
+      <button onclick="Minus()">-</button><br>
+      <button onclick="AddNumber('0')">0</button>
+      <button onclick="AddPoint('.')">.</button>
+      <button onclick="Calculate()">=</button>
+      <button onclick="Add()">+</button><br>
+    </div>
+
+  </div>
+</body>
+
+</html>
